@@ -25,7 +25,6 @@ class QuestionListSerializer(ModelSerializer):
         model = Question
         fields = ('id', 'text', 'pub_date', 'choices')
 
-    pass
 
 class ChoiceSerializer(ModelSerializer):
     """
@@ -34,4 +33,3 @@ class ChoiceSerializer(ModelSerializer):
     class Meta:
         model = Choice
         fields = ('id', 'question', 'choice_text', 'votes')
-    pass
